@@ -1,14 +1,15 @@
-let name = "Miguel";
+let firstname = 'Miguel';
 
-name = "Angel";
+firstname = 'Angel';
 
-const lastname = "Enriquez";
+const lastname = 'Enriquez';
 
 const condition = true;
 
 if(condition){
-    const lastname = "Hyper";
+    const lastname = 'Hyper';
     console.log(lastname)
 }
 
-console.log("Hola mundo " + name + " "  + lastname);
+console.log(`Hola mundo 
+${firstname} - ${lastname}`);
