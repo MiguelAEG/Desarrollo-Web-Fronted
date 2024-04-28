@@ -11,7 +11,7 @@ const carro = {
     inventarios: [
       {
         id: 1,
-        color: "Azul",
+        color: "Rojo",
         cantidad: 5,
         precio: 11000000
       },
@@ -41,21 +41,11 @@ const carro = {
     }
   }
   
-  // carro.nombre = "F40";
-  carro.costo = 15000000;
-  console.log(carro);
+  if (carro.lugarProcedencia != undefined && carro.lugarProcedencia.name) {
+    console.log("Cumple");
+  } else {
+    console.log("No existe lugar de procedencia")
+  }
   
-  const salu = carro.saludo();
-  console.log(salu);
-  console.log(carro.totalInventario());
-  
-  //Spread
-  const carro2 = { ...carro };
-  
-  const valida = carro2 === carro;
-  
-  console.log(valida);
-  
-  carro2.id = 20;
-  console.log(carro.id);
-  console.log(carro2.id);
+  console.log(carro.lugarProcedencia);
+  console.log(carro.lugarProcedencia?.municipio?.name);
